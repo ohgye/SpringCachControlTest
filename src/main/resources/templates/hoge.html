@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hoge</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>dateTime</th>
+            <td th:text="${hoge.dateTime}">2012-01-23T23:59:48.123</td>
+            <td th:text="${#temporals.format(hoge.dateTime, 'yyyy-MM-dd''T''HH:mm:ss.SSS')}">2012-01-23T23:59:48.123</td>
+            <td th:text="${now}"></td>            
+        </tr>
+    </table>
+</body>
+</html>
